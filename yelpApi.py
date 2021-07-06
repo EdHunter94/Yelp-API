@@ -1,4 +1,4 @@
-from yelpapi import yelpapi
+from yelpapi import yelpapi"
 import requests
 import pandas as pd
 import csv
@@ -15,6 +15,8 @@ endpoint = "https://api.yelp.com/v3/businesses/search"
 
 
 def search(term):
+
+    """You can set the address to where ever you want"""
     parameters = {"term" : term, "location" : "550 W Van Buren St Chicago, IL", "radius" : 24140}
 
     header = {"Authorization" : "bearer " + apiKey}
